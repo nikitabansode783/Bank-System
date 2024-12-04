@@ -39,7 +39,7 @@ void bank::deposit() {
 void bank::withdraw() {
     cout<<"\nEnter the amount to withdraw : ";
     cin>> wamt;
-    if(b[i].bal<wamt){
+    if (bal >= wamt){
         bal-=wamt;
         display();
     }
